@@ -15,10 +15,10 @@ public class AddServlet extends HttpServlet
 {
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException
 	{
-		int i= Integer.parseInt(req.getParameter("num1"));
+		int m= Integer.parseInt(req.getParameter("num1"));
 		int j= Integer.parseInt(req.getParameter("num2"));
 		
-		int k= i+j;
+		int k= m+j;
 		
 		Cookie cookie= new Cookie("k", k + "");
 		res.addCookie(cookie);
